@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
 }
 
 .App-logo {
@@ -25,4 +28,15 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+#content {
+  width: 100%;
+}
+
+.bt-menu {
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 10px;
+  z-index: 9999;
 }
