@@ -2,12 +2,6 @@
   margin-left: -250px;
 }
 
-#sidebar {
-  min-width: 250px;
-  max-width: 250px;
-  min-height: 100vh;
-}
-
 a[data-toggle="collapse"] {
   position: relative;
 }
@@ -31,19 +25,20 @@ a[data-toggle="collapse"] {
 
 #sidebar {
     /* don't forget to add all the previously mentioned styles here too */
-    background: #7386D5;
+    /*background: #7386D5;*/
+    background: #17a2b8;
     color: #fff;
     transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #0095ad;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    /*border-bottom: 1px solid #47748b;*/
 }
 
 #sidebar ul p {
@@ -57,13 +52,13 @@ a[data-toggle="collapse"] {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: #006070;
     background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #0095ad;
 }
 
 
@@ -106,4 +101,17 @@ a[data-toggle="collapse"] {
   /* top right corner of the sidebar */
   top: 10px;
   right: 10px;
+}
+
+.bt-menu {
+  position: absolute;
+  transition: all 0.3s;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 10px;
+  z-index: 9999;
+}
+
+.bt-menu.active {
+  margin-left: 260px;
 }

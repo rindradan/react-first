@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Menu from './menu';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './App.css';
 
 class App extends Component {
@@ -11,7 +10,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      showMenu: false,
+      showMenu: true,
     };
 
     this.toggleMenu = this.toggleMenu.bind(this);
@@ -26,19 +25,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Menu showMenu={this.state.showMenu} />
+        <Menu showMenu={this.state.showMenu} toggleMenu={this.toggleMenu} />
 
         <div id="content">
-          <nav className="bt-menu">
-            <div>
-
-              <button type="button" id="sidebarCollapse" className="btn btn-info" onClick={this.toggleMenu}>
-                <FontAwesomeIcon icon={this.state.showMenu ? "times" : "bars"} size='lg' />
-              </button>
-
-            </div>
-          </nav>
-
           <Header />
 
           <p className="App-intro">
