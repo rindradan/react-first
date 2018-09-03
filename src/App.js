@@ -10,7 +10,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      showMenu: true,
+      showMenu: false,
     };
 
     this.toggleMenu = this.toggleMenu.bind(this);

@@ -108,10 +108,10 @@ a[data-toggle="collapse"] {
   transition: all 0.3s;
   color: #fff;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 5px;
   z-index: 9999;
 }
 
 .bt-menu.active {
-  margin-left: 260px;
+  margin-left: 255px;
 }
