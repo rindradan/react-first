@@ -17,41 +17,41 @@ class Menu extends Component {
           <ul className="list-unstyled components">
             <p>Dummy Heading</p>
             <li className="active">
-              <a onClick={(e) => e.preventDefault} data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Home</a>
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Home</a>
               <ul className="collapse list-unstyled" id="homeSubmenu">
                 <li>
-                  <a onClick={(e) => e.preventDefault}>Home 1</a>
+                  <a href="#11">Home 1</a>
                 </li>
                 <li>
-                  <a onClick={(e) => e.preventDefault}>Home 2</a>
+                  <a href="#12">Home 2</a>
                 </li>
                 <li>
-                  <a onClick={(e) => e.preventDefault}>Home 3</a>
+                  <a href="#13">Home 3</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a onClick={(e) => e.preventDefault}>About</a>
+              <a href="#about">About</a>
             </li>
             <li>
               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Pages</a>
               <ul className="collapse list-unstyled" id="pageSubmenu">
                 <li>
-                  <a onClick={(e) => e.preventDefault}>Page 1</a>
+                  <a href="#21">Page 1</a>
                 </li>
                 <li>
-                  <a onClick={(e) => e.preventDefault}>Page 2</a>
+                  <a href="#22">Page 2</a>
                 </li>
                 <li>
-                  <a onClick={(e) => e.preventDefault}>Page 3</a>
+                  <a href="#23">Page 3</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a onClick={(e) => e.preventDefault}>Portfolio</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a onClick={(e) => e.preventDefault}>Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
