@@ -17,41 +17,19 @@ class Menu extends Component {
           <ul className="list-unstyled components">
             <p>Dummy Heading</p>
             <li className="active">
-              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Home</a>
-              <ul className="collapse list-unstyled" id="homeSubmenu">
-                <li>
-                  <a href="#11">Home 1</a>
-                </li>
-                <li>
-                  <a href="#12">Home 2</a>
-                </li>
-                <li>
-                  <a href="#13">Home 3</a>
-                </li>
-              </ul>
+              <a>Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a>About</a>
             </li>
             <li>
-              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Pages</a>
-              <ul className="collapse list-unstyled" id="pageSubmenu">
-                <li>
-                  <a href="#21">Page 1</a>
-                </li>
-                <li>
-                  <a href="#22">Page 2</a>
-                </li>
-                <li>
-                  <a href="#23">Page 3</a>
-                </li>
-              </ul>
+              <a>Pages</a>
             </li>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a>Portfolio</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a>Contact</a>
             </li>
           </ul>
         </nav>

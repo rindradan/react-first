@@ -33,7 +33,7 @@ a[data-toggle="collapse"] {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #0095ad;
+    background: #008297;
 }
 
 #sidebar ul.components {
@@ -58,7 +58,7 @@ a[data-toggle="collapse"] {
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #0095ad;
+    background: #008297;
 }
 
 
