@@ -25,3 +25,6 @@ package-lock.json
 
 .idea/
 .vscode/
+
+src/assets/less/*.css
+src/assets/less/*.css.map

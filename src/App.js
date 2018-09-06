@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Menu from './menu';
 
-import './App.css';
-
 class App extends Component {
 
   constructor(props) {

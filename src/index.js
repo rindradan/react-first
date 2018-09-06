@@ -5,7 +5,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faStroopwafel, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import './assets/bootstrap/bootstrap.min.css';
 
-import './index.less';
+import './assets/less/index.css';
 
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
