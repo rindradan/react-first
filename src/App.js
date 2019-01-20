@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route } from "react-router-dom";
+
 import Header from './content/component/header/Header';
 import Menu from './content/component/menu/Menu';
 import Home from './content/component/home/Home';
 import About from './content/component/about/About';
-
-import { BrowserRouter, Route } from "react-router-dom";
 
 class App extends Component {
 
