@@ -23,7 +23,7 @@ class Menu extends Component {
               <NavLink to="/about" onClick={() => toggleMenu()}>About</NavLink>
             </li>
             <li>
-              <a>Pages</a>
+              <NavLink to="/tiles" onClick={() => toggleMenu()}>Tiles</NavLink>
             </li>
             <li>
               <a>Portfolio</a>

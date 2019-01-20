@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
 
-import Header from './content/component/header';
-import Menu from './content/component/menu';
-import Home from './content/component/home';
-import About from './content/component/about';
+import Header from './content/page/header';
+import Menu from './content/page/menu';
+import Home from './content/page/home';
+import About from './content/page/about';
+import Tiles from './content/component/tiles';
 
 class App extends Component {
 
@@ -32,8 +33,12 @@ class App extends Component {
 
           <div id="content">
             <Header />
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
+
+            <div class="container">
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/tiles" component={Tiles} />
+            </div>
           </div>
 
           <div className={this.state.showMenu ? "overlay active" : "overlay hide"} onClick={this.toggleMenu}></div>
