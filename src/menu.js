@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NavLink } from 'react-router-dom';
 
 class Menu extends Component {
   render() {
@@ -15,11 +16,11 @@ class Menu extends Component {
 
           <ul className="list-unstyled components">
             <p>Dummy Heading</p>
-            <li className="active">
-              <a>Home</a>
+            <li>
+              <NavLink exact to="/" onClick={() => toggleMenu()}>Home</NavLink>
             </li>
             <li>
-              <a>About</a>
+              <NavLink to="/about" onClick={() => toggleMenu()}>About</NavLink>
             </li>
             <li>
               <a>Pages</a>

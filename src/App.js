@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Menu from './menu';
+import Home from './content/component/home/Home';
+import About from './content/component/about/About';
+
+import { BrowserRouter, Route } from "react-router-dom";
 
 class App extends Component {
 
@@ -22,19 +26,19 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Menu showMenu={this.state.showMenu} toggleMenu={this.toggleMenu} />
+      <BrowserRouter>
+        <div className="App">
+          <Menu showMenu={this.state.showMenu} toggleMenu={this.toggleMenu} />
 
-        <div id="content">
-          <Header />
+          <div id="content">
+            <Header />
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+          </div>
 
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
+          <div className={this.state.showMenu ? "overlay active" : "overlay hide"} onClick={this.toggleMenu}></div>
         </div>
-
-        <div className={this.state.showMenu ? "overlay active" : "overlay hide"} onClick={this.toggleMenu}></div>
-      </div>
+      </BrowserRouter>
     );
   }
 }
